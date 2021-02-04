@@ -1,0 +1,52 @@
+body {
+    margin: 0 100px 75px 100px;
+    background-color: #8FDEFF;
+}
+
+h1 {
+    margin-bottom: 10px; 
+    text-align:center; 
+    font-family: 'Carter One', cursive; 
+    font-weight: lighter; 
+    color: #A86D2A;
+}
+
+p {
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 130%;
+    text-indent: 70px;
+    text-align: justify;
+}
+
+h2 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 400;
+    font-size: 1.75em;
+    color: #3B89A8;
+}
+
+blockquote {
+    text-align: justify;
+    font-size: 32px;
+    font-family: 'Carter One', cursive;
+    color: #A86D2A;
+}
+
+b, strong {
+    color: #A86D2A;
+}
+
+mark {
+    background-color: #F5B56E;
+}
+
+abbr {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+hr {
+    height: 12px;
+    border-width: 0;
+    background-color: #F5B56E;
+}
