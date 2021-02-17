@@ -1,0 +1,194 @@
+* {
+	font-size: 18px;
+	font-family: Roboto, sans-serif;
+}
+
+body {
+	margin: 0px 35px;
+	background-color: #D8D8D8;
+}
+
+.banner {
+	text-align: center;
+	padding: 120px 100px 180px 100px;
+	background-color: #1D91E0;
+	color: white;
+}
+
+#banner-hr {
+	height: 6px;
+	width: 5%;
+	background-color: #E0861D;
+}
+
+#banner-title {
+	margin-top: 80px;
+}
+
+hr {
+	border-width: 0;
+}
+
+h1 {
+	font-size: 4em;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	word-spacing: 6px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-family: Roboto, sans-serif;
+}
+
+h3 {
+	font-family: 'Bebas Neue', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+.summary>p {
+	line-height: 1.5em;
+}
+
+.education>h4, .seminars>h4 {
+	margin-bottom: 2px;
+}
+
+small {
+	font-size: .75em;
+	font-weight: bold;
+}
+
+
+.section-white {
+	background-color: white;
+}
+
+.summary>h3, .education>h3, .interests>h3, .seminars>h3 {
+	margin-top: 0;
+	padding-top: 75px;
+}
+
+#educ-section, #seminars-section {
+	background-color: #1D91E0;
+	color: white;
+}
+
+.summary, .skills, .education, .interests, .seminars {
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.section-white ul:last-child, .education h5:last-child {
+	padding-bottom: 100px;
+}
+
+.section-white h3 {
+	/*color: #63B1E6;*/
+	color: #E0861D;
+}
+
+.section-white p, .section-white ul {
+	color: #8189a7;
+}
+
+.hr-header {
+	height: 5px;
+	width: 6%;
+	background-color: #63B1E6;
+	text-align: left;
+	margin-left: 0;
+	margin-bottom: 30px;
+}
+
+.education hr, .seminars hr {
+	background-color: #E0861D;
+}
+
+.educ-hr {
+	width: 90%;
+	align:left;
+	margin-left: 0;
+	height: 1px;
+	background-color:white;
+}
+
+.education>h5 {
+	color: #0D4861;
+}
+
+.education>small, .seminars>small {
+	color: #9dcee2;
+}
+
+.bar-container {
+	width:50%;
+	background-color: #94d9f7;
+	border-radius: 5px;
+}
+
+.skill {
+	margin-top: 10px;
+	margin-bottom: 35px;
+	border-radius: 5px;
+	background-color: #1780AD;
+}
+
+.skill-html {	width:80%;	 }
+.skill-css {	width:65%;	 }
+.skill-python {	   width:88%;   }
+.skill-sql {	width:70%;	 }
+.skill-java {	width:90%; 	 }
+
+.skill-list {
+	list-style-type: none;
+}
+
+.skill-list>li::before {
+	padding-right: 8px;
+	color: #E0861D;
+}
+
+#html::before {
+	content: "\f13b";
+	font-family: "Font Awesome 5 Brands";
+	
+}
+#css::before {
+	content: "\f38b";
+	font-family: "Font Awesome 5 Brands";
+}
+#python::before {
+	content: "\f3e2";
+	font-family: "Font Awesome 5 Brands";
+}
+#sql::before {
+	content: "\f1c0";
+	font-family: FontAwesome;
+}
+#java::before {
+	content: "\f4e4";
+	font-family: "Font Awesome 5 Brands";
+	font-weight: bold;
+}
+
+.interests li {
+	line-height: 1.5em;
+}
+
+.seminars {
+	padding-bottom: 100px;
+}
