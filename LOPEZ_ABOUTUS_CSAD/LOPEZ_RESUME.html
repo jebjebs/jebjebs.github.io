@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<!-- bebas neue -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<!-- alegreya sans sc -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap" rel="stylesheet">
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/34a54bc82b.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="LOPEZ_resumeDesign_csad.css">
+    <title>Resume</title>
+
+    <style>
+        * {
+            font-size: 18px;
+            font-family: Roboto, sans-serif;
+        }
+
+        body {
+            margin: 0px 35px;
+            background-color: #D8D8D8;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 120px 100px 180px 100px;
+            background-color: #1D91E0;
+            color: white;
+        }
+
+        #banner-hr {
+            height: 6px;
+            width: 5%;
+            background-color: #E0861D;
+        }
+
+        #banner-title {
+            margin-top: 80px;
+        }
+
+        hr {
+            border-width: 0;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            word-spacing: 6px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-family: Roboto, sans-serif;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        .summary>p {
+            line-height: 1.5em;
+        }
+
+        .education>h4, .seminars>h4 {
+            margin-bottom: 2px;
+        }
+
+        small {
+            font-size: .75em;
+            font-weight: bold;
+        }
+
+
+        .section-white {
+            background-color: white;
+        }
+
+        .summary>h3, .education>h3, .interests>h3, .seminars>h3 {
+            margin-top: 0;
+            padding-top: 75px;
+        }
+
+        #educ-section, #seminars-section {
+            background-color: #1D91E0;
+            color: white;
+        }
+
+        .summary, .skills, .education, .interests, .seminars {
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .section-white ul:last-child, .education h5:last-child {
+            padding-bottom: 100px;
+        }
+
+        .section-white h3 {
+            /*color: #63B1E6;*/
+            color: #E0861D;
+        }
+
+        .section-white p, .section-white ul {
+            color: #8189a7;
+        }
+
+        .hr-header {
+            height: 5px;
+            width: 6%;
+            background-color: #63B1E6;
+            text-align: left;
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+
+        .education hr, .seminars hr {
+            background-color: #E0861D;
+        }
+
+        .educ-hr {
+            width: 90%;
+            align:left;
+            margin-left: 0;
+            height: 1px;
+            background-color:white;
+        }
+
+        .education>h5 {
+            color: #0D4861;
+        }
+
+        .education>small, .seminars>small {
+            color: #9dcee2;
+        }
+
+        .bar-container {
+            width:50%;
+            background-color: #94d9f7;
+            border-radius: 5px;
+        }
+
+        .skill {
+            margin-top: 10px;
+            margin-bottom: 35px;
+            border-radius: 5px;
+            background-color: #1780AD;
+        }
+
+        .skill-html {   width:80%;   }
+        .skill-css {    width:65%;   }
+        .skill-python {    width:88%;   }
+        .skill-sql {    width:70%;   }
+        .skill-java {   width:90%;   }
+
+        .skill-list {
+            list-style-type: none;
+        }
+
+        .skill-list>li::before {
+            padding-right: 8px;
+            color: #E0861D;
+        }
+
+        #html::before {
+            content: "\f13b";
+            font-family: "Font Awesome 5 Brands";
+            
+        }
+        #css::before {
+            content: "\f38b";
+            font-family: "Font Awesome 5 Brands";
+        }
+        #python::before {
+            content: "\f3e2";
+            font-family: "Font Awesome 5 Brands";
+        }
+        #sql::before {
+            content: "\f1c0";
+            font-family: FontAwesome;
+        }
+        #java::before {
+            content: "\f4e4";
+            font-family: "Font Awesome 5 Brands";
+            font-weight: bold;
+        }
+
+        .interests li {
+            line-height: 1.5em;
+        }
+
+        .seminars {
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--LOPEZ-->
+    <!--02.15.2021-->
+    <div class="banner">
+    	<h1>Virgilio Lopez Jr.</h1>
+    	<hr id="banner-hr">
+    	<h2 id="banner-title">Web Developer | Programmer</h2>
+    </div>
+
+    <div class="section-white">
+    	<div class="summary">
+    		<h3>About</h3>
+    		<hr class="hr-header">
+    		<p>Developing web pages for different purposes and needs is my forte. I am proficient in different web development languages like HTML, CSS, Python, etc. I am also comfortable working with databases and integrating them with my projects. Not only with web development, I am also versed in software development and has experience using Java and C++.
+    			<br><br>
+    		As a developer, I am confident that the skills and experience I currently have will make a significant contribution to any projects that will be given to me. 
+    		</p>
+    	</div>
+    	<br>
+    	<div class="skills">
+    		<h3>Skills</h3>
+    		<hr class="hr-header">
+    		<ul class="mb-0 skill-list">
+    			<li id="html">HTML</li>
+    			<div class="bar-container">
+    				<div class="skill skill-html">&nbsp;</div>
+    			</div>
+    			<li id="css">CSS</li>
+    			<div class="bar-container">
+    				<div class="skill skill-css">&nbsp;</div>
+    			</div>
+    			<li id="python">Python (Flask)</li>
+    			<div class="bar-container">
+    				<div class="skill skill-python">&nbsp;</div>
+    			</div>
+    			<li id="sql">SQL (MySQL, MS SQL)</li>
+    			<div class="bar-container">
+    				<div class="skill skill-sql">&nbsp;</div>
+    			</div>
+    			<li id="java">Java</li>
+    			<div class="bar-container">
+    				<div class="skill skill-java">&nbsp;</div>
+    			</div>
+    		</ul>
+    	</div>
+    </div>
+    <div id="educ-section">
+    	<div class="education">
+    		<h3>Education</h3>
+    		<hr class="hr-header">
+    		<h4>Batangas State University</h4>
+    		<small>2013-2017</small>
+    		<h5>Junior High School</h5>
+    		<hr class="educ-hr">
+    		<h4>Makati Science High School</h4>
+    		<small>2017-2019</small>
+    		<h5>Science, Technology, and Mathematics Strand</h5>
+    		<hr class="educ-hr">
+    		<h4>University of the East - Manila</h4>
+    		<small>2019-Present</small>
+    		<h5 class="mb-0">B.S. Computer Science</h5>
+    	</div>
+    </div>
+    <div class="section-white">
+    	<div class="interests">
+    		<h3>Interests</h3>
+    		<hr class="hr-header">
+    		<ul class="mb-0">
+    			<li>Mobile App Development</li>
+    			<li>Web Frameworks</li>
+    			<li>Data Analytics</li>
+    			<li>Machine Learning</li>
+    			<li>UI/UX Design</li>
+    		</ul>
+    	</div>
+    </div>
+    <div id="seminars-section">
+    	<div class="seminars">
+    		<h3>Seminars</h3>
+    		<hr class="hr-header">
+    		<h4>Microsoft Azure Virtual Training</h4>
+    		<small>February 1-2, 2021</small>
+    		<hr class="educ-hr">
+    		<h4>AWS Siklab Pilipinas 2020</h4>
+    		<small>November 30, 2020 - December 1, 2020</small>
+    	</div>
+    </div>
+</body>
+</html>
+
+
+
