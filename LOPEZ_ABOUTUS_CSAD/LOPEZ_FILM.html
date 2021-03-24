@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <meta charset="utf-8">
-    <base target="partnersWindow">
-    <title>My Beat</title>
+    <!-- <base target="partnersWindow"> -->
+    <title>My Film</title>
 
     <style>
         body {
@@ -24,12 +24,14 @@
             font-family: 'Open Sans', sans-serif;
         }
 
-        .nav {
+        .nav h1 {
+            margin: 0px 0px 0px 30px;
             padding-top: 9px;
         }
 
-        .nav h1 {
-            margin: 0px 0px 0px 30px;
+        #logo {
+            text-decoration: none;
+            color: #A67417;
         }
 
         .right-nav {
@@ -37,14 +39,18 @@
         }
 
         .right-nav a {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 9px 10px 13px;
             text-decoration: none;
             color: black;
+            float: left;
         }
 
-        .right-nav a:active {
-            color: #A67417;
+        .right-nav a:hover {
+            background-color: #be964c;
+        }
+
+        #nav-film {
+            background-color: #A67417;
         }
 
         h1 {
@@ -173,9 +179,9 @@
             <a href="LOPEZ_BIO.html">About Me</a>
             <a href="LOPEZ_RESUME.html">Resume</a>
             <a href="LOPEZ_BEAT.html">My Beat</a>
-            <a href="LOPEZ_FILM.html">My Film</a>
+            <a id="nav-film" href="LOPEZ_FILM.html">My Film</a>
         </div>
-        <h1>this is me</h1>
+        <h1><a id="logo" href="LOPEZ_LandingPage_CSAD.html">this is me</a></h1>
     </div>
 
     <div id="banner" class="section">

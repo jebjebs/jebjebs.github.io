@@ -9,6 +9,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap" rel="stylesheet">
 
+<!-- josefin slab -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+
+<!-- open sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 <!-- fontawesome -->
 <script src="https://kit.fontawesome.com/34a54bc82b.js" crossorigin="anonymous"></script>
 
@@ -25,6 +33,45 @@
         body {
             margin: 0px 35px;
             background-color: #D8D8D8;
+        }
+
+        .nav {
+            background-color: white;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: #E0861D;
+            font-size: 40px;
+            font-family: "Josefin Slab", serif;
+            text-transform: none;
+
+        }
+
+        #logo-div {
+            margin: 0px 0px 0px 30px;
+            padding-top: 9px;
+        }
+
+        .right-nav {
+            float: right;
+        }
+
+        .right-nav a {
+            padding: 9px 10px 13px;
+            text-decoration: none;
+            color: black;
+            float: left;
+            font-family: "Open Sans", sans-serif;
+            font-size: 20px;
+        }
+
+        .right-nav a:hover {
+            background-color: #e0861d9e;
+        }
+
+        #nav-resume {
+            background-color: #E0861D;
         }
 
         .banner {
@@ -211,11 +258,54 @@
         .seminars {
             padding-bottom: 100px;
         }
+
+        .summary img {
+            float:left; 
+            margin: 5px 20px 10px 15px;
+            vertical-align: top;
+        }
+
+        #about-img {
+            background-image: url("images/self.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 144px;
+            height: 144px;
+            float:left;
+            margin-right: 25px;
+        }
+
+        .layer {
+            background-color: rgba(29, 154, 224, 0.3);
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: white;
+            padding-top: 100px;
+        }
+
+/*        #seminars-section {
+            margin-bottom: 100px;
+        }*/
     </style>
 </head>
 <body>
     <!--LOPEZ-->
     <!--02.15.2021-->
+    <div class="nav">
+        <div class="right-nav">
+            <a href="LOPEZ_LandingPage_CSAD.html">Home</a>
+            <a href="LOPEZ_BIO.html">About Me</a>
+            <a id="nav-resume" href="LOPEZ_RESUME.html">Resume</a>
+            <a href="LOPEZ_BEAT.html">My Beat</a>
+            <a id="nav-film" href="LOPEZ_FILM.html">My Film</a>
+        </div>
+        <div id="logo-div"><a class="logo" href="LOPEZ_LandingPage_CSAD.html">this is me</a></div>
+    </div>
+
     <div class="banner">
     	<h1>Virgilio Lopez Jr.</h1>
     	<hr id="banner-hr">
@@ -226,6 +316,9 @@
     	<div class="summary">
     		<h3>About</h3>
     		<hr class="hr-header">
+            <div id="about-img">
+                <div class="layer"></div>
+            </div>
     		<p>Developing web pages for different purposes and needs is my forte. I am proficient in different web development languages like HTML, CSS, Python, etc. I am also comfortable working with databases and integrating them with my projects. Not only with web development, I am also versed in software development and has experience using Java and C++.
     			<br><br>
     		As a developer, I am confident that the skills and experience I currently have will make a significant contribution to any projects that will be given to me. 
@@ -299,6 +392,11 @@
     		<h4>AWS Siklab Pilipinas 2020</h4>
     		<small>November 30, 2020 - December 1, 2020</small>
     	</div>
+    </div>
+
+    <div class="footer">
+        <hr width="65%" color="#E0861D" size="1px" style="border-width: 1px; margin-top: 0px;">
+        <a href="LOPEZ_LandingPage_CSAD.html" class="logo">this is me</a>
     </div>
 </body>
 </html>
