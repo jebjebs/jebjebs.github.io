@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- josefin sans -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+	<!-- josefin slab -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+	<!-- open sans -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	    <link rel="stylesheet" type="text/css" href="../css/collage.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base target="newWindow">
+	<title>Collage</title>
+
+	<script>
+		function writeText(header, description, bottom, background, color, color2) {
+			document.getElementById("header").innerHTML=header;
+			document.getElementById("description").innerHTML=description;
+			document.getElementById("description").style.color=color;
+			document.getElementById("bottom").innerHTML=bottom;
+			document.getElementById("bottom").style.color=color2;
+			document.getElementById("card").style.backgroundImage=background;
+		}
+		function dissolveText() {
+			document.getElementById("header").innerHTML="Where to?";
+			document.getElementById("description").innerHTML="Go on an adventure with me around the world!";
+			document.getElementById("description").style.color="#c5b6b6";
+			document.getElementById("bottom").innerHTML="";
+			document.getElementById("description").style.color="#c5b6b6";
+			document.getElementById("card").style.backgroundImage="url(../images/gradient1.jpg)";
+		}
+	</script>
+
+</head>
+<body>
+	<h1>Places I Want to Visit</h1>
+	<div class="container">
+		<div id="card">
+			<div id="content">
+				<h1 id="header">Where to?</h1>
+				<p id="description">Go on an adventure with me around the world!</p>
+				<p id="bottom"></p>
+			</div>
+		</div>
+		<img id="map" src="../images/world-map2.jpg" alt="Map of the world with pins of famous tourist locations." usemap="#worldMap">
+		<map name="worldMap">
+			<!-- stonehenge -->
+			<area shape="circle" coords="278,115,37" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(../images/stonehenge2.jpg)');" onMouseOut="dissolveText();"> <!-- check -->
+			<area shape="circle" coords="320,15,37" href="LOPEZ_STONEHENGE.html"> <!-- check -->
+			<area shape="circle" coords="430,159,14" href="LOPEZ_STONEHENGE.html">
+			<area shape="rect" coords="300,129,432,190" href="LOPEZ_STONEHENGE.html">
+			<area shape="rect" coords="324,95,445,144" href="LOPEZ_STONEHENGE.html">
+			<area shape="poly" coords="425,177,439,174,434,182,443,194,437,199,420,199,427,186" href="LOPEZ_STONEHENGE.html">
+			<!-- colloseum -->
+			<area shape="circle" coords="412,203,37" href="LOPEZ_COLLOSEUM.html" onMouseOver="writeText('The Colloseum','A giant amphitheatre built in Rome under the Flavian emperors.','Rome','url(../images/colloseum-main.jpg)');" onMouseOut="dissolveText();"> <!-- check -->
+			<area shape="circle" coords="459,201,37" href="LOPEZ_COLLOSEUM.html"> <!-- check -->
+			<area shape="rect" coords="465,248,569,302" href="LOPEZ_COLLOSEUM.html">
+			<area shape="rect" coords="498,203,619,259" href="LOPEZ_COLLOSEUM.html">
+			<area shape="poly" coords="476,238,459,208,470,186,486,185,504,194" href="LOPEZ_COLLOSEUM.html">
+			<!-- kilimanjaro -->
+			<area shape="circle" coords="385,367,33" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(../images/kilimanjaro71.jpg)', '#575151');" onMouseOut="dissolveText()"> <!-- check -->
+			<area shape="circle" coords="425,367,33" href="LOPEZ_KILIMANJARO.html"> <!-- check -->
+			<area shape="rect" coords="434,452,535,505" href="LOPEZ_KILIMANJARO.html">
+			<area shape="rect" coords="472,414,577,466" href="LOPEZ_KILIMANJARO.html">
+			<area shape="poly" coords="577,435,525,419,518,399,553,394,549,374,574,362,577,370,593,380,586,404,592,415" href="LOPEZ_KILIMANJARO.html">
+			<!-- sydney -->
+			<area shape="circle" coords="646,388,33" href="LOPEZ_SYDNEY.html" onMouseOver="writeText('Sydney Opera House','A world-famous icon of architecture and one of the indisputable masterpieces of human creativity.','Australia','url(../images/sydney3.jpg)');" onMouseOut="dissolveText();"> <!-- check -->
+			<area shape="circle" coords="689,388,33" href="LOPEZ_SYDNEY.html"> <!-- check -->
+			<area shape="rect" coords="760,477,863,532" href="LOPEZ_SYDNEY.html">
+			<area shape="rect" coords="800,438,908,491" href="LOPEZ_SYDNEY.html">
+			<area shape="poly" coords="816,531,814,557,810,563,869,552,877,556,875,569,886,572,886,581,892,586,913,577,929,544,931,521,929,502,923,497,923,462,909,492" href="LOPEZ_SYDNEY.html"> 
+			<!-- great wall -->
+			<area shape="circle" coords="640,144,33" href="LOPEZ_GREAT-WALL.html" onMouseOver="writeText('Great Wall of China','A series of fortifications built across the historical northern borders of ancient Chinese states and Imperial China','China','url(../images/wall6.jpg)','#b3adad');" onMouseOut="dissolveText();"> <!-- check -->
+			<area shape="circle" coords="678,143,33" href="LOPEZ_GREAT-WALL.html"> <!-- check -->
+			<area shape="rect" coords="754,179,852,224" href="LOPEZ_GREAT-WALL.html">
+			<area shape="rect" coords="794,135,893,186" href="LOPEZ_GREAT-WALL.html">
+			<area shape="poly" coords="752,223,690,233,722,277,780,292,850,301,851,287,825,248,832,240,844,240,851,219" href="LOPEZ_GREAT-WALL.html">
+		</map>
+		
+	</div>
+</body>
+</html>
+
+<!-- <h1 id="header">The Stonehenge</h1>
+<p id="description">A prehistoric monument on Salisbury Plain in Wiltshire, England.</p>
+<p id="bottom">England</p> -->

@@ -1,0 +1,54 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Josefin Slab", serif;
+	font-size: 18px;
+}
+area {
+	/*outline: none;*/
+}
+h1 {
+	font-family: "Josefin Sans", sans-serif;
+}
+
+#map {
+	float:left;
+	/*margin-right: 20px;*/
+}
+
+.container {
+	overflow: hidden;
+}
+
+#card {
+	background-image: url(../images/gradient1.jpg);
+	background-repeat: no-repeat;
+	background-color: white;
+	width: 35%;
+	display:inline-block;
+	float:right;
+	position: relative;
+	border-radius: 3px;
+	margin-bottom: -100%;
+	padding-bottom: 100%;
+	margin-right: 20px;
+}
+
+#card #content {
+	margin: 50px;
+}
+
+#content h1 {
+	color: white;
+}
+
+#content p {
+	color: #c5b6b6;
+}
+
+#content #bottom {
+	position: absolute;
+	top: 500px;
+}
