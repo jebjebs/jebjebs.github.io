@@ -17,6 +17,91 @@
 	<base target="newWindow">
 	<title>Collage</title>
 
+	<style>
+		html, body {
+			height: 100%;
+		}
+
+		body {
+			font-family: "Josefin Slab", serif;
+			/*font-size: 18px;*/
+			font-size: 1.25em;
+			background-color: #f4f7f6;
+			margin-top: 0;
+			padding-bottom: 70px;
+		}
+
+		.nav {
+			background-color: white;
+			margin-left: -8px;
+			margin-right: -8px;
+			box-shadow: 0 2px 3px #e2e8e6;
+		}
+
+		.nav h1 {
+			margin: 0;
+			font-family: 'Josefin Slab', serif;
+			color: #A67417;
+			padding-top: 7px;
+			padding-left: 30px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #A67417;
+		}
+
+		area {
+			outline: none;
+		}
+
+		h1 {
+			font-family: "Josefin Sans", sans-serif;
+		}
+
+		#map {
+			float:left;
+			border-radius: 4px;
+		}
+
+		.container {
+			overflow: hidden;
+		}
+
+		#card {
+			background-image: url(../images/gradient1.jpg);
+			background-repeat: no-repeat;
+			background-color: white;
+			width: 35%;
+			display:inline-block;
+			float:right;
+			position: relative;
+			border-radius: 4px;
+			margin-bottom: -100%;
+			padding-bottom: 100%;
+			margin-right: 20px;
+		}
+
+		#card #content {
+			margin: 50px;
+		}
+
+		#content h1 {
+			color: white;
+		}
+
+		#content p {
+			color: #c5b6b6;
+		}
+
+		#content #bottom {
+			position: absolute;
+			top: 480px;
+		}
+	</style>
+
+
+
 	<script>
 		function writeText(header, description, bottom, background, headcolor,color, color2) {
 			document.getElementById("header").innerHTML=header;
