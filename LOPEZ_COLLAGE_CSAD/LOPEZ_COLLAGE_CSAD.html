@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- josefin sans -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+	<!-- josefin slab -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+	<!-- open sans -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	    <link rel="stylesheet" type="text/css" href="collage.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base target="newWindow">
+	<title>Collage</title>
+
+
+	<script>
+		function writeText(header, description, bottom, background, headcolor,color, color2) {
+			document.getElementById("header").innerHTML=header;
+			document.getElementById("header").style.color=headcolor;
+			document.getElementById("description").innerHTML=description;
+			document.getElementById("description").style.color=color;
+			document.getElementById("bottom").innerHTML=bottom;
+			document.getElementById("bottom").style.color=color2;
+			document.getElementById("card").style.backgroundImage=background;
+		}
+		function dissolveText() {
+			document.getElementById("header").innerHTML="Where to?";
+			document.getElementById("header").style.color="white";
+			document.getElementById("description").innerHTML="Go on an adventure with me around the world!";
+			document.getElementById("description").style.color="#c5b6b6";
+			document.getElementById("bottom").innerHTML="";
+			document.getElementById("bottom").style.color="#c5b6b6";
+			document.getElementById("card").style.backgroundImage="url(images/gradient1.jpg)";
+		}
+	</script>
+
+</head>
+<body>
+	<div class="nav">
+		<h1><a href="../LOPEZ_ABOUTUS_CSAD/LOPEZ_LandingPage_CSAD.html">this is me</a></h1>
+	</div>
+	<h1 style="text-align: center">Places I Want to Visit</h1>
+	<div class="container">
+		<div id="card">
+			<div id="content">
+				<h1 id="header">Where to?</h1>
+				<p id="description">Go on an adventure with me around the world!</p>
+				<p id="bottom"></p>
+			</div>
+		</div>
+		<img id="map" src="images/world-map2.jpg" alt="Map of the world with pins of famous tourist locations." usemap="#worldMap">
+		<map name="worldMap">
+			<!-- stonehenge -->
+			<area shape="circle" coords="278,115,37" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(images/stonehenge2.jpg)','#38362e','','#8f8f8f');" onMouseOut="dissolveText();">
+			<area shape="circle" coords="320,115,37" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(images/stonehenge2.jpg)','#38362e','','#8f8f8f');" onMouseOut="dissolveText();">
+			<area shape="circle" coords="344,127,12" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(images/stonehenge2.jpg)','#38362e','','#8f8f8f');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="238,106,321,150" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(images/stonehenge2.jpg)','#38362e','','#8f8f8f');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="273,76,356,119" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(images/stonehenge2.jpg)','#38362e','','#8f8f8f');" onMouseOut="dissolveText();">
+			<area shape="poly" coords="339,143,341,149,337,159,349,159,354,156,347,145,350,137" href="LOPEZ_STONEHENGE.html" onMouseOver="writeText('The Stonehenge','A prehistoric monument on Salisbury Plain in Wiltshire, England.','England','url(images/stonehenge2.jpg)','#38362e','','#8f8f8f');" onMouseOut="dissolveText();">
+
+			<!-- colloseum -->
+			<area shape="circle" coords="412,203,37" href="LOPEZ_COLLOSEUM.html" onMouseOver="writeText('The Colloseum','A giant amphitheatre built in Rome under the Flavian emperors.','Italy','url(images/colloseum-main.jpg)','#F4E7DB','','#F4E7DB');" onMouseOut="dissolveText();">
+			<area shape="circle" coords="459,201,37" href="LOPEZ_COLLOSEUM.html" onMouseOver="writeText('The Colloseum','A giant amphitheatre built in Rome under the Flavian emperors.','Italy','url(images/colloseum-main.jpg)','#F4E7DB','','#F4E7DB');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="371,191,467,238" href="LOPEZ_COLLOSEUM.html" onMouseOver="writeText('The Colloseum','A giant amphitheatre built in Rome under the Flavian emperors.','Italy','url(images/colloseum-main.jpg)','#F4E7DB','','#F4E7DB');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="400,161,495,210" href="LOPEZ_COLLOSEUM.html" onMouseOver="writeText('The Colloseum','A giant amphitheatre built in Rome under the Flavian emperors.','Italy','url(images/colloseum-main.jpg)','#F4E7DB','','#F4E7DB');" onMouseOut="dissolveText();">
+			<area shape="poly" coords="379,190,367,166,375,148,387,147,395,157,397,162,395,167" href="LOPEZ_COLLOSEUM.html" onMouseOver="writeText('The Colloseum','A giant amphitheatre built in Rome under the Flavian emperors.','Italy','url(images/colloseum-main.jpg)','#F4E7DB','','#F4E7DB');" onMouseOut="dissolveText();">
+
+			<!-- kilimanjaro -->
+			<area shape="circle" coords="385,367,33" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(images/kilimanjaro71.jpg)', '#736F39', '#575151','#a39e5d');" onMouseOut="dissolveText()">
+			<area shape="circle" coords="425,367,33" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(images/kilimanjaro71.jpg)', '#736F39', '#575151','#a39e5d');" onMouseOut="dissolveText()">
+			<area shape="circle" coords="455,311,11" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(images/kilimanjaro71.jpg)', '#736F39', '#575151','#a39e5d');" onMouseOut="dissolveText()">
+			<area shape="rect" coords="348,359,426,403" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(images/kilimanjaro71.jpg)', '#736F39', '#575151','#a39e5d');" onMouseOut="dissolveText()">
+			<area shape="rect" coords="380,330,460,373" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(images/kilimanjaro71.jpg)', '#736F39', '#575151','#a39e5d');" onMouseOut="dissolveText()">
+			<area shape="poly" coords="448,321,452,328,453,333,456,333,457,329,460,325,462,320" href="LOPEZ_KILIMANJARO.html" onMouseOver="writeText('Mount Kilimanjaro','Africa\'s tallest mountain and the largest free-standing mountain rise in the world.','Tanzania','url(images/kilimanjaro71.jpg)', '#736F39', '#575151','#a39e5d');" onMouseOut="dissolveText()">
+
+			<!-- sydney -->
+			<area shape="circle" coords="646,388,33" href="LOPEZ_SYDNEY.html" onMouseOver="writeText('Sydney Opera House','A world-famous icon of architecture and one of the indisputable masterpieces of human creativity.','Australia','url(images/sydney3.jpg)','#D98B48','','#D98B48');" onMouseOut="dissolveText();">
+			<area shape="circle" coords="689,388,33" href="LOPEZ_SYDNEY.html" onMouseOver="writeText('Sydney Opera House','A world-famous icon of architecture and one of the indisputable masterpieces of human creativity.','Australia','url(images/sydney3.jpg)','#D98B48','','#D98B48');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="608,387,688,426" href="LOPEZ_SYDNEY.html" onMouseOver="writeText('Sydney Opera House','A world-famous icon of architecture and one of the indisputable masterpieces of human creativity.','Australia','url(images/sydney3.jpg)','#D98B48','','#D98B48');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="646,350,726,393" href="LOPEZ_SYDNEY.html" onMouseOver="writeText('Sydney Opera House','A world-famous icon of architecture and one of the indisputable masterpieces of human creativity.','Australia','url(images/sydney3.jpg)','#D98B48','','#D98B48');" onMouseOut="dissolveText();">
+			<area shape="poly" coords="726,393,738,371,738,399,743,402,744,415,742,434,730,461,716,469,708,466,708,458,700,455,701,446,696,443,647,451,647,449,651,446,651,425" href="LOPEZ_SYDNEY.html" onMouseOver="writeText('Sydney Opera House','A world-famous icon of architecture and one of the indisputable masterpieces of human creativity.','Australia','url(images/sydney3.jpg)','#D98B48','','#D98B48');" onMouseOut="dissolveText();">
+			
+			<!-- great wall -->
+			<area shape="circle" coords="640,144,33" href="LOPEZ_GREAT-WALL.html" onMouseOver="writeText('Great Wall of China','A series of fortifications built across the historical northern borders of ancient Chinese states and Imperial China.','China','url(images/wall6.jpg)', '#F2BF91','#b3adad','#F2BF91');" onMouseOut="dissolveText();">
+			<area shape="circle" coords="678,143,33" href="LOPEZ_GREAT-WALL.html" onMouseOver="writeText('Great Wall of China','A series of fortifications built across the historical northern borders of ancient Chinese states and Imperial China.','China','url(images/wall6.jpg)', '#F2BF91','#b3adad','#F2BF91');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="602,136,683,179" href="LOPEZ_GREAT-WALL.html" onMouseOver="writeText('Great Wall of China','A series of fortifications built across the historical northern borders of ancient Chinese states and Imperial China.','China','url(images/wall6.jpg)', '#F2BF91','#b3adad','#F2BF91');" onMouseOut="dissolveText();">
+			<area shape="rect" coords="634,108,716,152" href="LOPEZ_GREAT-WALL.html" onMouseOver="writeText('Great Wall of China','A series of fortifications built across the historical northern borders of ancient Chinese states and Imperial China.','China','url(images/wall6.jpg)', '#F2BF91','#b3adad','#F2BF91');" onMouseOut="dissolveText();">
+			<area shape="poly" coords="696,174,698,177,694,186,688,186,683,197,682,204,676,203,669,199,660,200,679,232,681,241,623,231,576,221,553,186,601,176" href="LOPEZ_GREAT-WALL.html" onMouseOver="writeText('Great Wall of China','A series of fortifications built across the historical northern borders of ancient Chinese states and Imperial China.','China','url(images/wall6.jpg)', '#F2BF91','#b3adad','#F2BF91');" onMouseOut="dissolveText();">
+		</map>
+	</div>
+</body>
+</html>
