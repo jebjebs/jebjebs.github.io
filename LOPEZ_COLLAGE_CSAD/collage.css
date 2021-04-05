@@ -16,6 +16,43 @@ body {
 	margin-left: -8px;
 	margin-right: -8px;
 	box-shadow: 0 2px 3px #e2e8e6;
+	font-family: "Open Sans", sans-serif;
+}
+
+.nav h1 {
+    margin: 0;
+    font-family: 'Josefin Slab', serif;
+    color: #A67417;
+    padding-top: 7px;
+    padding-left: 30px;
+}
+
+.right-nav {
+    float: right;
+}
+
+.right-nav a {
+	font-size: 0.8em;
+    padding: 12px 10px 13px;
+    text-decoration: none;
+    color: gray;
+    float: left;
+}
+
+.right-nav a:hover {
+    background-color: #be964c;
+}
+
+.nav #dream-places {
+	background-color: #A67417;
+	color: #463d3d;
+}
+
+/*.nav {
+	background-color: white;
+	margin-left: -8px;
+	margin-right: -8px;
+	box-shadow: 0 2px 3px #e2e8e6;
 }
 
 .nav h1 {
@@ -24,7 +61,7 @@ body {
 	color: #A67417;
 	padding-top: 7px;
 	padding-left: 30px;
-}
+}*/
 
 a {
 	text-decoration: none;
@@ -49,7 +86,7 @@ h1 {
 }
 
 #card {
-	background-image: url(../images/gradient1.jpg);
+	background-image: url(images/gradient1.jpg);
 	background-repeat: no-repeat;
 	background-color: white;
 	width: 35%;
