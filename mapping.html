@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function writeText(txt) {
+			document.getElementById("desc").innerHTML=txt;
+		}
+		function dissolveText(txt) {
+			document.getElementById("desc").innerHTML=txt;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<img src="" alt="" usemap="#solarSystem">
+		<map name="solarSystem">
+			<!-- rectangle -->
+			<area shape="rect" coords="<upperleftX>,<upperleftY>,<lowerrightX>,<lowerrightY>" href="Mercury.html" alt="" onMouseOver="writeText('chuchu');" onMouseOut="dissolveText('chuchu');">
+
+			<!-- circle -->
+			<area shape="circle" coords="<centerx>,<centery>,<radius>" href="Uranus.html" alt="">
+
+			<!-- polygon -->
+			<area shape="poly" coords="<all-coords>" href="" alt="">
+		</map>
+	</div>			
+	<div>
+		<p id="desc"></p>
+	</div>		
+</body>
+</html>
