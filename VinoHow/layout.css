@@ -1,0 +1,62 @@
+/*REQUIRED CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+	font-family: 'Public Sans', sans-serif;
+	margin: 0;
+	font-size: 16px;
+	background-color: #f4f7f6;
+}
+.navigation {
+	/*position: relative;*/
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	box-shadow: 0 2px 3px #e2e8e6;
+	background-color: white;
+	opacity: 0.95;
+	z-index: 2;
+}
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.navigation li {
+	float: right;
+}
+
+.navigation li a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 12px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+.nav-logo {
+	position: absolute;
+	left: 40px;
+	top: 0;
+
+}
+.nav-logo img {
+	width: 80px;
+
+}
+.nav-logo a {
+	padding: 0px !important;
+}
+.navigation .active {
+	color: #ed1e24;
+}
+.navigation a:hover {
+	color: #ed1e24;
+	transition: 0.2s;
+}
+
+/* END OF REQUIRED CSS*/
