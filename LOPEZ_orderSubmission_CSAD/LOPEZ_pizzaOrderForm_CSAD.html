@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="LOPEZ_IMAGES_CSAD/form.css">
+
+	<title>Pizza Order Form</title>
+</head>
+<body>
+	<form action="">
+		<div class="brand"><h4>Jeb's Pizzeria</h4></div>
+		<fieldset class="basic-info">
+			<h1>Tell Us Your Basic Info</h1>
+			<table>
+				<tr>
+					<th><label for="fname">First name</label></th>
+					<th><label for="lname">Last name</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" name="fname" id="fname" placeholder="Juan" required></td>
+					<td><input type="text" name="lname" id="lname`" placeholder="Dela Cruz" required></td>
+				</tr>
+				<tr>
+					<th><label for="phone">Phone number</label></th>
+					<th><label for="email">Email address</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" name="phone" id="phone" placeholder="09123456789" required></td>
+					<td><input type="text" name="email" id="email" placeholder="juandelacruz@email.com"></td>		
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset class="basic-info">
+			<h1>Where Do You Want Us To Deliver?</h1>
+			<table>
+				<tr>
+					<th><label for="street">House no. / Street address</label></th>
+					<th><label for="brgy">Barangay</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" name="street" id="street" placeholder="66 Guerrero St." required></td>
+					<td><input type="text" name="brgy" id="brgy" placeholder="Brgy. 143" required></td>
+				</tr>
+				<tr>
+					<th><label for="city">City / Municipality</label></th>
+					<th><label for="province">Province</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" name="city" id="city" placeholder="Batangas City" required></td>
+					<td><input type="text" name="province" id="province" placeholder="Batangas" required></td>
+				</tr>
+				<tr>
+					<th colspan="2"><label for="description">Address description / Landmark</label></th>
+				</tr>
+				<tr>
+					<td colspan="2" class="description"><textarea name="description" id="description" rows="3" placeholder="Tell us any additional info about the address..."></textarea></td>
+				</tr>
+				
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<h1>Customize Your Order</h1>
+			<h2>Burger</h2>
+			<h3>Bun</h3>
+			<table class="center burger">
+				<tr class="burger-img">
+					<td>
+						<label for="white-bun"><img src="LOPEZ_IMAGES_CSAD/white-bun.jpg" alt=""></label>
+					</td>
+					<td>
+						<label for="wheat-bun"><img src="LOPEZ_IMAGES_CSAD/wheat-bun.jpg" alt=""></label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="bun" id="white-bun" value="white-bun" checked>
+						<label for="white-bun">White Bun</label>
+					</td>
+					<td>
+						<input type="radio" name="bun" id="wheat-bun" value="wheat-bun">
+						<label for="wheat-bun">Wheat Bun</label>
+					</td>
+				</tr>
+			</table>
+			
+			<h3>Patty</h3>
+			<table class="center burger">
+				<tr>
+					<td>						
+						<label for="s-patty"><img src="LOPEZ_IMAGES_CSAD/s-patty.jpg" alt=""></label>
+					</td>
+					<td>
+						<label for="d-patty"><img src="LOPEZ_IMAGES_CSAD/d-patty.jpg" alt=""></label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="patty" id="s-patty" value="s-patty" checked>
+						<label for="s-patty">Single Patty</label>
+					</td>
+					<td>
+						<input type="radio" name="patty" id="d-patty" value="d-patty">
+						<label for="d-patty">Double Patty</label>
+					</td>
+				</tr>
+			</table>
+
+			<h3>Add-ons</h3>
+			<table class="add-ons">
+				<tr>
+					<td>
+						<input type="checkbox" id="addon-1" name="addon-1" value="Cheese">
+						<label for="addon-1">Cheese</label><br>
+						<input type="checkbox" id="addon-2" name="addon-2" value="Coleslaw">
+						<label for="addon-2">Coleslaw</label><br>
+						<input type="checkbox" id="addon-3" name="addon-3" value="Tomato">
+						<label for="addon-3">Tomato</label><br>
+					</td>
+					<td>
+						<input type="checkbox" id="addon-4" name="addon-4" value="Onion">
+						<label for="addon-4">Onion</label><br>
+						<input type="checkbox" id="addon-5" name="addon-5" value="Cucumber">
+						<label for="addon-5">Cucumber</label><br>
+						<input type="checkbox" id="addon-6" name="addon-6" value="Bacon">
+						<label for="addon-6">Bacon</label><br>			
+					</td>
+				</tr>
+			</table>
+			<div class="div-quantity">
+				<h3 class="quantity-label">Quantity</h3>
+				<input type="number" id="burger-quantity" class="quantity" name="burger-quantity" min="1" max="50" value="1">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<h2>Pasta</h2>
+			<h3>Sauce</h3>
+			<table class="center">
+				<tr>
+					<td>
+						<label for="sauce1"><img src="LOPEZ_IMAGES_CSAD/carbonara.jpg" alt=""></label>
+					</td>
+					<td>
+						<label for="sauce2"><img src="LOPEZ_IMAGES_CSAD/pesto.jpg" alt=""></label>
+					</td>
+					<td>
+						<label for="sauce3"><img src="LOPEZ_IMAGES_CSAD/spaghetti.jpg" alt=""></label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="sauce" id="sauce1" value="Carbonara" checked>
+						<label for="sauce1">Carbonara</label>
+					</td>
+					<td>
+						<input type="radio" name="sauce" id="sauce2" value="Pesto">
+						<label for="sauce2">Pesto</label>
+					</td>
+					<td>
+						<input type="radio" name="sauce" id="sauce3" value="Spaghetti">
+						<label for="sauce3">Spaghetti</label>
+					</td>
+				</tr>
+			</table>
+
+			<h3>Add-ons</h3>
+			<table class="add-ons">
+				<tr>
+					<td>
+						<input type="checkbox" name="pasta" id="p-addon-1" value="Extra Cheese">
+						<label for="p-addon-1">Extra Cheese</label><br>
+						<input type="checkbox" name="pasta" id="p-addon-2" value="Extra Sauce">
+						<label for="p-addon-2">Extra Sauce</label>
+					</td>
+					<td>
+						<input type="checkbox" name="pasta" id="p-addon-3" value="Mushroom">
+						<label for="p-addon-3">Mushroom</label><br>
+						<input type="checkbox" name="pasta" id="p-addon-4" value="Bacon Bits">
+						<label for="p-addon-4">Bacon Bits</label>
+					</td>
+				</tr>
+			</table>
+			<div class="div-quantity">
+				<h3 class="quantity-label">Quantity</h3>
+				<input type="number" id="pasta-quantity" class="quantity" name="pasta-quantity" min="1" max="50" value="1">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<h2>Fries</h2>
+			<table class="center">
+				<tr>
+					<td>
+						<label for="flavor1"><img src="LOPEZ_IMAGES_CSAD/bbq.jpg" alt=""></label>
+					</td>
+					<td>
+						<label for="flavor2"><img src="LOPEZ_IMAGES_CSAD/sourcream.jpg" alt=""></label>
+					</td>
+					<td>
+						<label for="flavor3"><img src="LOPEZ_IMAGES_CSAD/cheese.jpeg" alt=""></label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="flavor" id="flavor1" value="BBQ" checked>
+						<label for="flavor1">BBQ</label>
+					</td>
+					<td>
+						<input type="radio" name="flavor" id="flavor2" value="Sour Cream">
+						<label for="flavor2">Sour Cream</label>
+					</td>
+					<td>
+						<input type="radio" name="flavor" id="flavor3" value="Cheese">
+						<label for="flavor3">Cheese</label>
+					</td>
+				</tr>
+			</table>
+			<div class="size">
+				<h3>Size</h3>
+				<select name="fries-size" id="fries-size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+				</select>
+			</div>
+			<div class="div-quantity">
+				<h3 class="quantity-label">Quantity</h3>
+				<input type="number" id="fries-quantity" class="quantity" name="fries-quantity" min="1" max="50" value="1">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<h2>Drinks</h2>
+			<table class="center">
+				<tr>
+					<td>
+					
+						<label for="drink1"><img src="LOPEZ_IMAGES_CSAD/coke.jpg" alt=""></label>
+						
+					</td>
+					<td>
+					
+						<label for="drink2"><img src="LOPEZ_IMAGES_CSAD/pepsi.jpg" alt=""></label>
+					</td>
+					<td>
+					
+						<label for="drink3"><img src="LOPEZ_IMAGES_CSAD/iced-tea.jpg" alt=""></label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="drink" id="drink1" value="Coke" checked>
+						<label for="drink1">Coke</label>
+					</td>
+					<td>
+						<input type="radio" name="drink" id="drink2" value="pepsi">
+						<label for="drink2">Pepsi</label>
+					</td>
+					<td>
+						<input type="radio" name="drink" id="drink3" value="iced tea">
+						<label for="drink3">Iced Tea</label>
+					</td>
+				</tr>
+			</table>
+			<div class="size">
+				<h3>Size</h3>
+				<select name="drink-size" id="drink-size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+				</select>
+			</div>
+			<div class="div-quantity">
+				<h3 class="quantity-label">Quantity</h3>
+				<input type="number" id="drink-quantity" class="quantity" name="drink-quantity" min="1" max="50" value="1">
+			</div>
+		</fieldset>
+
+ 		<fieldset>
+ 			<h2>This order is for...</h2>
+
+ 			<table class="center burger">
+ 				<tr>
+ 					<td>						
+ 						<label for="delivery"><img src="LOPEZ_IMAGES_CSAD/delivery.jpg" alt=""></label>
+ 					</td>
+ 					<td>
+ 						<label for="pickup"><img src="LOPEZ_IMAGES_CSAD/pickup.jpg" alt=""></label>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>
+ 						<input type="radio" name="delivery" id="delivery" value="Delivery" checked>
+ 						<label for="delivery">Delivery</label>
+ 					</td>
+ 					<td>
+ 						<input type="radio" name="delivery" id="pickup" value="Pickup">
+ 						<label for="pickup">Pickup</label>
+ 					</td>
+ 				</tr>
+ 			</table>
+ 		</fieldset>
+
+ 		<fieldset>
+ 			<h3>Have any feedback/recommendations?</h3>
+ 			<textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Tell us how we can do better..."></textarea>
+ 		</fieldset>
+
+		<fieldset style="text-align: right">
+			<input type="submit" value="Submit">
+			<input type="reset">
+		</fieldset>
+
+	</form>
+</body>
+</html>
