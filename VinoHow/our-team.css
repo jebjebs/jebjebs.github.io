@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h3, h4, h5 {
+    margin: 0;
+}
+hr.divider {
+    width: 90%;
+    margin: 30px auto;
+    border-top: 1px solid #2f0f442e;
+}
+
+.intro {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #F2B705;
+}
+.intro p {
+    font-size: 1.25em;
+    margin-top: 10px;
+    color: #4f4f4f;
+}
+
+span.job {
+    font-family: 'Lora', serif;
+    color: black;
+}
+.section h3 {
+    margin-top: 25px;
+    color: #2f0f44;
+}
+.section h4 {
+    font-weight: normal;
+    color: #2f0f44;
+}
+.section p {
+    text-align: justify;
+    color: #4f4f4f;
+    line-height: 1.5em;
+}
+.section img {
+    width: 100%;
+}
+.section hr {
+    border-top: 1px solid #ed1e2445;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.details {
+    position: relative;
+}
+.details a {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #ed1e24;
+    text-decoration: none;
+}
+.details a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #F2B705;
+    padding: 40px 70px;
+    margin: 0;
+    font-size: 2.8em;
+    color: white;
+}
+
+table {
+    width: 85%;
+    margin: auto;
+    border-spacing: 30px;
+}
+td {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fbf9f3;
+    border-radius: 5px;
+    padding: 20px;
+    vertical-align: top;
+}
+td:first-child {
+    width: 65%;
+    margin-right: 50px;
+}
