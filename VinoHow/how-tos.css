@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
 
 
 body {
@@ -17,10 +17,6 @@ body {
 
 .sub-nav {
 	margin: 10px 58px; 
-/*	position: -webkit-sticky;
-	position: sticky;
-	top: 70px;
-	z-index: 4;*/
 }
 .sub-nav ul {
 	list-style-type: none;
@@ -33,17 +29,28 @@ body {
 	padding: 16px 12px;
 }
 .sub-nav a {
+	font-family: 'Public Sans', sans-serif;
 	text-decoration: none;
 	padding-bottom: 8px;
 	color: #4f4f4f;
+	transition: color 0.1s, border-bottom 0.1s;
+}
+.sub-nav a:hover {
+	color: #ED1E24;
+	border-bottom: 4px solid #ed1e24;
 }
 #active {
 	border-bottom: 4px solid #ed1e24;
 	color: #ed1e24;
 }
 
+
+
 h1 {
 	color: #ed1e24;
+}
+h2 {
+	color: #F2B705;
 }
 
 .featured {
@@ -52,8 +59,9 @@ h1 {
 .featured img {
 	float: right;
 	width: 500px;
+	margin-left: 20px;
 }
-.featured p {
+.details .title {
 	text-align: center;
 	margin-left: -100px;
 	margin-bottom: 20px;
@@ -66,6 +74,9 @@ h1 {
 }
 .details h1 {
 	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.details .subtitle {
 	margin-bottom: 50px;
 }
 
@@ -87,10 +98,9 @@ hr {
 	padding: 20px 20px 0 20px;
 	margin-right: 10px;
 	margin-bottom: 30px;
-	/*background-color: #fbf9f3;*/
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 5px;
-	transition: 0.35s;
+	transition: background-color 0.35s;
 	color: black;
 }
 .card:hover {
@@ -109,6 +119,16 @@ hr {
 .category {
 	margin-bottom: 50px;
 }
+.card h4 {
+	font-family: 'Public Sans', sans-serif;
+}
 .card p {
 	color: #ed1e24;
+}
+.latest-hows {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.sml-how-to {
+	color: #808080;
 }
