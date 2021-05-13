@@ -7,9 +7,14 @@ body {
 }
 .heading {
 	background-color: #F2B705;
-	padding: 40px 70px;
+	background-image: url('images/diy.jpg');
+	background-size: cover;
+}
+.heading .color {
+	background-color: rgba(242,183,5,0.9);
 }
 .heading h1 {
+	padding: 40px 70px;
 	margin:0;
 	font-size: 2.8em;
 	color: white;
@@ -39,6 +44,11 @@ body {
 	color: #ED1E24;
 	border-bottom: 4px solid #ed1e24;
 }
+.sub-nav hr {
+	border-top: 1px solid #F2B705;
+	width: 98%;
+	box-shadow: 0 1px 8px 0 rgba(242,183,5,0.3);
+}
 #active {
 	border-bottom: 4px solid #ed1e24;
 	color: #ed1e24;
@@ -54,7 +64,7 @@ h2 {
 }
 
 .featured {
-	margin: 50px 150px 210px 70px;
+	margin: 50px 150px 120px 70px;
 }
 .featured img {
 	float: right;
@@ -90,11 +100,14 @@ hr {
 
 
 .section {
-	padding: 40px 70px;
+	padding: 10px 70px 40px;
 }
 .card {
+	position: relative;
+	vertical-align: top;
 	display: inline-block;
 	width: 20%;
+	min-height: 310px;
 	padding: 20px 20px 0 20px;
 	margin-right: 10px;
 	margin-bottom: 30px;
@@ -102,6 +115,10 @@ hr {
 	border-radius: 5px;
 	transition: background-color 0.35s;
 	color: black;
+	background-color: white;
+}
+.popular .card {
+	min-height: 330px;
 }
 .card:hover {
 	background-color: #e6e6e4;
@@ -113,7 +130,7 @@ hr {
 	border-radius: 5px; 
 	margin-bottom: 10px;
 }
-.categories a {
+.category a {
 	text-decoration: none;
 }
 .category {
@@ -124,11 +141,26 @@ hr {
 }
 .card p {
 	color: #ed1e24;
+	position: absolute;
+	left: 20px;
+	bottom: 0px;
 }
 .latest-hows {
 	margin-top: 5px;
 	margin-bottom: 30px;
+	text-transform: capitalize;
 }
 .sml-how-to {
 	color: #808080;
+}
+
+
+.footer {
+  margin-top: 20px;
+  box-shadow: 0px 2px 30px 1px rgba(0,0,0,0.2);
+  background-color: #cccccc;
+  padding: 16px 0;
+}
+.footer p {
+  margin: 0;
 }

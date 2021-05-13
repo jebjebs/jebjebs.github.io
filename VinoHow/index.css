@@ -16,9 +16,9 @@ p {
 }
 .banner-btn {
 	position: absolute;
-	bottom: 60px;
+	bottom: 70px;
 	left: 50%;
-	margin-left: -145.515px;
+	margin-left: -72.9px;
 }
 .button {
 	padding: 15px 20px;
@@ -47,6 +47,22 @@ p {
 	color: white;
 	transition: 0.3s;
 }
+#banner .down-arrow {
+	font-size: 2em;
+	position: absolute;
+	bottom:5px;
+	left: 50%;
+	margin-left: -19px;
+	
+}
+.down-arrow i {
+	color: #551a8bc7;
+	transition: color 0.2s;
+}
+.down-arrow i:hover {
+	color: #ED1E24;
+}
+
 
 .section {
 	/*margin-bottom: 10px;*/
@@ -94,6 +110,16 @@ p {
 	transition: background-color 0.35s, box-shadow 0.35s;
 	color: black;
 }
+.latest .card {
+	position: relative;
+	min-height: 320px;
+	vertical-align: top;
+}
+.latest .card p {
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+}
 .card:hover {
 	background-color: #e6e6e4;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -123,6 +149,7 @@ p {
 .category {
 	margin-bottom: 50px;
 }
+
 .card p {
 	color: #ed1e24;
 }

@@ -6,6 +6,23 @@ body {
 h3, h4, h5 {
     margin: 0;
 }
+
+.heading {
+    background-color: #F2B705;
+    background-image: url('images/team.jpeg');
+    background-size: cover;
+}
+.heading .color {
+    background-color: rgba(242,183,5,0.9);
+}
+.heading h1 {
+    padding: 40px 70px;
+    margin:0;
+    font-size: 2.8em;
+    color: white;
+}
+
+
 hr.divider {
     width: 90%;
     margin: 30px auto;
@@ -67,13 +84,6 @@ span.job {
     text-decoration: underline;
 }
 
-.header {
-    background-color: #F2B705;
-    padding: 40px 70px;
-    margin: 0;
-    font-size: 2.8em;
-    color: white;
-}
 
 table {
     width: 85%;
@@ -82,7 +92,7 @@ table {
 }
 td {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: #fbf9f3;
+    background-color: white;
     border-radius: 5px;
     padding: 20px;
     vertical-align: top;
@@ -90,4 +100,14 @@ td {
 td:first-child {
     width: 65%;
     margin-right: 50px;
+}
+
+.footer {
+  margin-top: 80px;
+  box-shadow: 0px 2px 30px 1px rgba(0,0,0,0.2);
+  background-color: #cccccc;
+  padding: 16px 0;
+}
+.footer p {
+  margin: 0;
 }

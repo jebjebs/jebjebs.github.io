@@ -1,14 +1,22 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-.header {
-  color:white;
+
+.heading {
   background-color: #F2B705;
-  padding: 40px 70px;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.8em;
+  background-image: url('images/gallery.jpg');
+  background-size: cover;
 }
+.heading .color {
+  background-color: rgba(242,183,5,0.9);
+}
+.heading h1 {
+  padding: 40px 70px;
+  margin:0;
+  font-size: 2.8em;
+  color: white;
+}
+
 
 .section {
   padding-bottom:70px;
