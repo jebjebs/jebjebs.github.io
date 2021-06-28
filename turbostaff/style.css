@@ -26,9 +26,8 @@ h6 {
 	padding-left: 3em;
 	padding-right: 3em;
 }
-.navbar-brand {
-	font-size: 1.5em;
-	font-weight: 100;
+.navbar-brand img {
+	width: 150px;
 }
 .nav-link {
 	font-size: .9em;
@@ -36,7 +35,7 @@ h6 {
 	padding-right: 2.25em !important;
 }
 .nav-link:hover {
-	color: #c9aa5d !important;
+	color: #B72018 !important;
 }
 .nav-link.contact {
 	font-weight: 700;
@@ -47,7 +46,7 @@ h6 {
 
 
 .banner {
-	background-image: url('images/sc5.jpg');
+	background-image: url('images/high-quality.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 90vh;
@@ -80,7 +79,7 @@ h6 {
 }
 
 .banner2 {
-	background-image: url(images/tricycle.jpg);
+	background-image: url(images/true-to-service.jpg);
 	height: 80vh;
 	background-size: cover;
 	background-position: center;
@@ -115,19 +114,22 @@ h6 {
 	background-color: #ddd !important;
 }
 .text-primary {
-	color: #c9aa5d !important;
+	color: #1072B0 !important;
 }
 .text-secondary {
 	color: #4c4845 !important;
 }
+.text-accent {
+	color: #b72018 !important;
+}
 .btn-primary {
-	background-color:  #c9aa5d !important;
-	border: 2px solid #c9aa5d !important;
+	background-color:  #1072B0 !important;
+	border: 2px solid #1072B0 !important;
 	transition: 0.5s;
 }
 .btn-primary:hover {
 	background-color: white !important;
-	color: #c9aa5d;
-	border: 2px solid #c9aa5d;
+	color: #1072B0;
+	border: 2px solid #1072B0;
 	transition: 0.5s;
 }
